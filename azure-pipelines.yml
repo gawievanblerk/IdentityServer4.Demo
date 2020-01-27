@@ -15,7 +15,7 @@ steps:
 - task: AzureRmWebAppDeployment@4
   inputs:
     ConnectionType: 'AzureRM'
-    azureSubscription: 'leastprivilege(b4f1893e-53e4-474d-aee5-7c0db5668eee)'
+    azureSubscription: 'Chante Digital Subscription(7a64edf5-1870-4f2e-8762-de5084d4b527)'
     appType: 'webApp'
     WebAppName: 'identityserver4demo'
     packageForLinux: '$(System.DefaultWorkingDirectory)/publish'
