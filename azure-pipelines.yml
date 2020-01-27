@@ -12,10 +12,4 @@ steps:
     useGlobalJson: true
 - script: dotnet publish IdentityServer4Demo.sln -c Release --self-contained -r win-x86 -o publish
   displayName: 'build and publish'
-- task: AzureRmWebAppDeployment@4
-  inputs:
-    ConnectionType: 'AzureRM'
-    azureSubscription: 'Chante Digital Subscription(7a64edf5-1870-4f2e-8762-de5084d4b527)'
-    appType: 'webApp'
-    WebAppName: 'identityserver4demo'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/publish'
+
